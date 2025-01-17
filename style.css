@@ -1,0 +1,451 @@
+   
+body {
+    background-color: #000000; 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the header */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001; 
+}
+.nav-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3000; /* Higher than both the main-nav and dropdown menu */
+}
+
+.nav-icon span {
+    font-size: 24px;
+    color: #ff7e5f;
+}
+
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute; /* Ensure proper placement */
+    top: 50px; /* Place below the nav icon */
+    left: 15px;
+    width: 150px; /* Set the width */
+    background: #fff; /* Set background for visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for separation */
+    border-radius: 4px; /* Rounded corners */
+    z-index: 2000; /* Ensure it appears above the main-nav */
+}
+
+.nav-icon.active .dropdown-menu {
+    display: block; /* Make dropdown visible */
+}
+
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+
+}
+
+.dropdown-menu a:hover {
+    background: #ff7e5f;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+nav.main-nav {
+    background: linear-gradient(135deg, gray, lightgray);
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    position: fixed;
+    top: 100px; /* Align below the header */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Lower than the dropdown menu */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+
+
+.nav-top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav-top ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+    justify-content: center; /* Center the menu items */
+    gap: 10px; /* Add some space between items */
+}
+
+.nav-top li {
+    margin: 0; /* Remove margins since spacing is handled by gap */
+}
+
+.nav-top a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+    white-space: nowrap; /* Prevent menu items from wrapping individually */
+}
+
+
+.nav-top a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ff7e5f; 
+}
+
+.header-container {
+    margin-top: 200px; /* Adjust this value based on the header and nav height */
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.image img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    width: 100%; /* Ensure full width for alignment */
+}
+
+.food-title-container {
+    display: flex; /* Align title and price horizontally */
+    justify-content: space-between; /* Push price to the right */
+    align-items: center; /* Align title and price vertically */
+    width: 100%;
+}
+
+.food-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+    color: white;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #ff7e5f;
+    margin-left: 10px;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.food-desc {
+    margin: 5px 0 10px 0;
+    color: #666;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #ff7e5f;
+    margin-left: 10px;
+    white-space: nowrap; /* Prevent wrapping to a new line */
+}
+.section-container {
+    scroll-margin-top: 85px; /* Adjust this to match your fixed header height */
+}
+
+.image {
+    width: 100px; /* Container width */
+    height: 67px; /* Container height */
+    background-color: #f0f0f0; /* Placeholder for background color */
+    margin-right: 15px;
+    box-sizing: border-box; /* Include padding and border in size calculations */
+    overflow: hidden; /* Prevent overflow of content */
+}
+
+.image img {
+    width: 100%; /* Make the image fit the container's width */
+    height: 100%; /* Make the image fit the container's height */
+    object-fit: cover; /* Crop and fill the container */
+    display: block; /* Remove extra spacing under the image */
+}
+
+.section-container h2 {
+    margin-left: 20px; 
+    font-size: 2em; 
+    color: #ffffff; 
+}
+
+
+.about-us {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto; 
+    background-color: #fffefe;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+
+.contact-us {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-us h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-details h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.contact-details a {
+    color: #ff7e5f; 
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+.section-container h2{
+    color:#feb47b;
+}
+.contact-form h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.contact-form h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center; /* Center the heading */
+}
+
+.contact-form button {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #feb47b; 
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333; /* Label text color */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Ensure inputs span the full form width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.rating label {
+    font-size: 1.5em;
+    color: #ff7e5f;
+    cursor: pointer;
+}
+.rating input {
+    display: none;
+}
+.rating input:checked ~ label {
+    color: #feb47b; 
+}
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #feb47b;
+}
+
+
+.map-container {
+    margin: 20px 0;
+}
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    color: #fffdfd;
+    margin-top: 40px; 
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.container {
+    display: flex;
+    align-items: flex-start; /* Align image and text */
+    margin-bottom: 20px;
+}
+
+
+.text {
+    flex: 1; /* Take up the remaining space next to the image */
+}
+
+.food-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+/*fffff 
+
+.image {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0; 
+    margin-right: 15px;
+}
+*/
+
+.price {
+    margin-left: auto;
+    font-size: 1.1em;
+    color: #ff7e5f;
+    font-weight: bold;
+}
+
+.food-desc {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.social-icons a:hover {
+    color: #ff7e5f;
+}
+
+footer p {
+    margin: 0;
+}
+@media screen and (max-width: 600px) {
+    .nav-top ul {
+        flex-direction: row; /* Stack menu items vertically on very small screens */
+    }
+
+    .nav-top li {
+        margin: 5px 0; /* Add space between stacked items */
+    }
+}
