@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BigBun</title>
+
   <!-- External stylesheets kept as-is so your existing CSS continues to work -->
   <link rel="stylesheet" href="style.css" />
   <link
@@ -11,8 +12,10 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
   />
 </head>
+
 <!-- Note: This header placeholder existed in your original markup outside <body>. Kept to avoid breaking any CSS relying on it. -->
 <div class="header-container"></div>
+
 <body>
   <!-- =============================
        HEADER
@@ -21,7 +24,7 @@
     <!-- Centered logo (kept same size) -->
     <img
       src="img/Logo.jpeg"
-      alt=""
+      alt="BigBun Logo"
       style="width: 150px; height: auto; display: block; margin: 0 auto;"
     />
 
@@ -38,17 +41,13 @@
 
   <!-- =============================
        MAIN NAV
-       Rewritten to reflect new structure: Burgers, Sandwiches, Meals
-       (Other categories preserved: Salads, Starters, Add-ons, Beverages)
        ============================= -->
   <nav class="main-nav">
     <div class="nav-top">
       <ul>
-        <!-- New high-level grouping -->
         <li><a href="#burgers">BURGERS</a></li>
         <li><a href="#sandwiches">SANDWICHES</a></li>
         <li><a href="#meals">MEALS</a></li>
-        <!-- Existing categories kept intact -->
         <li><a href="#salads">SALADS</a></li>
         <li><a href="#starters">STARTERS</a></li>
         <li><a href="#add-ons">ADD-ONS</a></li>
@@ -57,481 +56,419 @@
   </nav>
 
   <!-- =============================
-       STARTERS (ALL ORIGINAL ITEMS KEPT)
-       Includes one EMPTY placeholder starter at the end for future use
+       STARTERS (UPDATED TO MATCH MENU IMAGE)
        ============================= -->
   <div id="starters" class="section-container">
     <h2>STARTERS</h2>
 
     <div class="container">
-      <div class="image"><img src="img/crispy potato.jpg" alt="" /></div>
+      <div class="image"><img src="img/crispy potato.jpg" alt="French Fries" /></div>
       <div class="text">
-        <p class="food-title">
-          CRUNCHY FRIES
-          <span class="price">$2</span>
-        </p>
-        <p class="food-desc">French fries, ketchup.</p>
+        <p class="food-title">FRENCH FRIES <span class="price">$2</span></p>
+        <p class="food-desc">French fries, special pepper mix, ketchup.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/potato wedges.jpg" alt="" /></div>
+      <div class="image"><img src="img/potato wedges.jpg" alt="Potato Wedges" /></div>
       <div class="text">
-        <p class="food-title">
-          POTATO WEDGES
-          <span class="price">$2.5</span>
-        </p>
-        <p class="food-desc">Crispy potato wedges, special pepper mix, cocktail sauce.</p>
+        <p class="food-title">POTATO WEDGES <span class="price">$3</span></p>
+        <p class="food-desc">Served with cocktail sauce.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/cheese fries.jpg" alt="" /></div>
+      <div class="image"><img src="img/cheese fries.jpg" alt="Cheese Fries" /></div>
       <div class="text">
-        <p class="food-title">
-          CHEESE FRIES
-          <span class="price">$3</span>
-        </p>
-        <p class="food-desc">French fries, topped with melted cheddar cheese.</p>
+        <p class="food-title">CHEESE FRIES <span class="price">$3.5</span></p>
+        <p class="food-desc">French fries, topped with melted Cheddar cheese.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/mozarella stick.jpg" alt="" /></div>
+      <div class="image"><img src="img/mozarella stick.jpg" alt="Mozzarella Sticks" /></div>
       <div class="text">
-        <p class="food-title">
-          MOZZARELLA STICKS
-          <span class="price">$4</span>
-        </p>
-        <p class="food-desc">Served with cocktail sauce dip.</p>
+        <p class="food-title">MOZZARELLA STICKS <span class="price">$5</span></p>
+        <p class="food-desc">(5 pcs) Served with cocktail sauce.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/cheese balls.jpg" alt="" /></div>
+      <div class="image"><img src="img/cheese balls.jpg" alt="Cheese Balls" /></div>
       <div class="text">
-        <p class="food-title">
-          CHEESE BALLS
-          <span class="price">$4</span>
-        </p>
-        <p class="food-desc">Served with BBQ sauce.</p>
+        <p class="food-title">CHEESE BALLS <span class="price">$5</span></p>
+        <p class="food-desc">(5 pcs) Served with BBQ sauce.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/onion rings.jpg" alt="" /></div>
+      <div class="image"><img src="img/onion rings.jpg" alt="Onion Rings" /></div>
       <div class="text">
-        <p class="food-title">
-          ONION RINGS
-          <span class="price">$4</span>
-        </p>
-        <p class="food-desc">Crispy onion rings served with BBQ dip.</p>
+        <p class="food-title">ONION RINGS <span class="price">$4</span></p>
+        <p class="food-desc">6 onion rings served with BBQ sauce.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/chicken fillet.jpg" alt="" /></div>
+      <div class="image"><img src="img/onion rings.jpg" alt="Onion Rings Large" /></div>
       <div class="text">
-        <p class="food-title">
-          CHICKEN FILLET
-          <span class="price">5</span>
-        </p>
-        <p class="food-desc">Golden chicken strips served with honey mustard sauce.</p>
+        <p class="food-title">ONION RINGS LARGE <span class="price">$5.5</span></p>
+        <p class="food-desc">10 onion rings served with BBQ sauce.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/combo plate.jpg" alt="" /></div>
+      <div class="image"><img src="img/chicken fillet.jpg" alt="Chicken Strips" /></div>
       <div class="text">
-        <p class="food-title">
-          COMBO PLATE
-          <span class="price">$10</span>
-        </p>
-        <p class="food-desc">Crispy onion rings, potato wedges, chicken strips, mozzarella sticks, served with BBQ, cocktail sauce, honey mustard.</p>
+        <p class="food-title">CHICKEN STRIPS <span class="price">$5</span></p>
+        <p class="food-desc">(4 pcs) Chicken strips served with honey mustard sauce.</p>
       </div>
     </div>
 
-   
-
-    <!-- EMPTY STARTER PLACEHOLDER (requested) -->
-    <div class="container placeholder">
-      <!-- Intentionally no image: add when you create the new starter -->
-      <div class="image" ><img src="img/Loaded-Fries.jpg" alt="" > </div>
+    <div class="container">
+      <div class="image"><img src="img/combo plate.jpg" alt="Combo Plate" /></div>
       <div class="text">
-        <p class="food-title">
-          LOADED FRIES
-          <span class="price">$5.5</span>
+        <p class="food-title">COMBO PLATE <span class="price">$10</span></p>
+        <p class="food-desc">
+          5 onion rings, potato wedges, 3 chicken strips, 3 mozzarella sticks,
+          served with BBQ dip, cocktail sauce, and honey mustard.
         </p>
-        <p class="food-desc">French Fries, grilled chicken breast, BBQ sauce, Cheddar cheese, honey mustard, jalapenos</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image"><img src="img/Loaded-Fries.jpg" alt="Loaded Fries" /></div>
+      <div class="text">
+        <p class="food-title">LOADED FRIES <span class="price">$5.5</span></p>
+        <p class="food-desc">
+          French fries, fried chicken breast, BBQ sauce, Cheddar cheese,
+          honey mustard, cocktail sauce, and jalapeno.
+        </p>
       </div>
     </div>
   </div>
 
   <!-- =============================
-       SALADS (unchanged)
+       SANDWICHES (UPDATED TO MATCH MENU IMAGE)
        ============================= -->
-  <div id="salads" class="section-container">
-    <h2>SALADS</h2>
+  <div id="sandwiches" class="section-container">
+    <h2>SANDWICHES</h2>
 
     <div class="container">
-      <div class="image"><img src="img/caesar salad.jpg" alt="" /></div>
+      <div class="image"><img src="img/crispy chicken sandwich.jpg" alt="Crispy Chicken Sandwich" /></div>
       <div class="text">
-        <p class="food-title">
-          CAESAR SALAD
-          <span class="price">$5</span>
-        </p>
-        <p class="food-desc">Iceberg, croutons, parmesan, served with our special Caesar sauce.</p>
+        <p class="food-title">CRISPY CHICKEN SANDWICH <span class="price">$5</span></p>
+        <p class="food-desc">Crispy chicken, fries, coleslaw, ketchup, garlic mayo.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/crab salad.jpg" alt="" /></div>
+      <div class="image"><img src="img/chicken sub (2).jpg" alt="Chicken Sub" /></div>
       <div class="text">
-        <p class="food-title">
-          CRAB SALAD
-          <span class="price">$5</span>
+        <p class="food-title">CHICKEN SUB <span class="price">$6.5</span></p>
+        <p class="food-desc">
+          Grilled chicken breast, iceberg, pickles, corn, shredded mozzarella, garlic mayo.
         </p>
-        <p class="food-desc">Crab sticks, shredded iceberg, shredded carrots, cucumber, avocado slice, cocktail sauce.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/farmer salad.jpg" alt="" /></div>
+      <div class="image"><img src="img/Fajita_-2.jpg" alt="Fajita Sandwich" /></div>
       <div class="text">
-        <p class="food-title">
-          FARMER SALAD
-          <span class="price">$4.5</span>
+        <p class="food-title">FAJITA SANDWICH <span class="price">$6.5</span></p>
+        <p class="food-desc">
+          Marinated grilled chicken breast, grilled bell pepper, grilled onions, mozzarella cheese,
+          soy sauce, sriracha, and avocado sauce.
         </p>
-        <p class="food-desc">Iceberg, corn, cherry tomato, cucumber, and feta cheese, served with lemon oil dressing.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image"><img src="img/quesadilla chicken-2.jpg" alt="Quesadilla Chicken" /></div>
+      <div class="text">
+        <p class="food-title">QUESADILLA CHICKEN <span class="price">$6.5</span></p>
+        <p class="food-desc">
+          Marinated grilled chicken breast, grilled bell pepper, grilled onions, mozzarella cheese,
+          soy sauce, served with guacamole sauce.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image"><img src="img/boneless sandwich.jpg" alt="Boneless Sandwich" /></div>
+      <div class="text">
+        <p class="food-title">BONELESS SANDWICH <span class="price">$5</span></p>
+        <p class="food-desc">
+          Crispy chicken, BBQ sauce, honey mustard sauce, cocktail sauce, Cheddar cheese, iceberg,
+          pickles, and chips.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image"><img src="img/potato sandwich.jpg" alt="Potato Sandwich" /></div>
+      <div class="text">
+        <p class="food-title">POTATO SANDWICH <span class="price">$2</span></p>
+        <p class="food-desc">Fried potatoes, coleslaw, ketchup, and garlic mayo.</p>
       </div>
     </div>
   </div>
 
   <!-- =============================
-       BURGERS (NEW GROUPING)
-       Combines all Beef & Chicken burgers without removing any item
+       MEALS (UPDATED TO MATCH MENU IMAGE)
+       ============================= -->
+  <div id="meals" class="section-container">
+    <h2>MEALS</h2>
+
+    <div class="container">
+      <div class="image"><img src="img/chicken crispy Meal.jpg" alt="Crispy Meal" /></div>
+      <div class="text">
+        <p class="food-title">CRISPY MEAL <span class="price">$7.5</span></p>
+        <p class="food-desc">5 chicken strips, served with coleslaw salad, pickles, fries, and garlic mayo.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image"><img src="img/nuggets meal.jpg" alt="Nuggets Meal" /></div>
+      <div class="text">
+        <p class="food-title">NUGGETS MEAL <span class="price">$4.5</span></p>
+        <p class="food-desc">150g chicken nuggets, fries, cocktail sauce.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image"><img src="img/duo-meal.jpg" alt="Duo Meal Offer" /></div>
+      <div class="text">
+        <p class="food-title">DUO MEAL OFFER <span class="price">$6</span></p>
+        <p class="food-desc">2 medium chicken cheese burgers, fries, ketchup.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image"><img src="img/office meal.jpg" alt="Office Meal" /></div>
+      <div class="text">
+        <p class="food-title">OFFICE MEAL <span class="price">$7.25</span></p>
+        <p class="food-desc">Zinger burger, fries, sauce, 2 mozzarella sticks, and soft drink.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============================
+       BURGERS (UPDATED TO MATCH MENU IMAGE)
        ============================= -->
   <div id="burgers" class="section-container">
     <h2>BURGERS</h2>
 
-    <!-- Beef Burgers -->
+    <!-- BEEF -->
     <div class="container">
-      <div class="image"><img src="img/beef Bbq  burger1.jpg" alt="" /></div>
+      <div class="image"><img src="img/beef Bbq  burger1.jpg" alt="BBQ Beef Burger" /></div>
       <div class="text">
-        <p class="food-title">
-          BBQ BEEF BURGER
-          <span class="price">$5.5</span>
-        </p>
-        <p class="food-desc">Beef patty, topped with onion rings, iceberg, BBQ sauce, and mayo.</p>
+        <p class="food-title">BBQ BEEF BURGER <span class="price">$6</span></p>
+        <p class="food-desc">Grilled beef patty, topped with onion rings, iceberg, BBQ sauce, and mayo.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/beef swiss mushroom.jpg" alt="" /></div>
+      <div class="image"><img src="img/beef swiss mushroom.jpg" alt="Swiss Mushroom Burger" /></div>
       <div class="text">
-        <p class="food-title">
-          SWISS MUSHROOM BURGER
-          <span class="price">$6</span>
-        </p>
-        <p class="food-desc">Beef patty, special mushroom sauce, lettuce, fresh mushrooms, Swiss cheese.</p>
+        <p class="food-title">SWISS MUSHROOM BURGER <span class="price">$6.5</span></p>
+        <p class="food-desc">Beef patty, our special mushroom sauce, pickles, fresh mushroom and Swiss cheese.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/beef mexican burger.jpg" alt="" /></div>
+      <div class="image"><img src="img/beef mexican burger.jpg" alt="Mexican Burger" /></div>
       <div class="text">
-        <p class="food-title">
-          MEXICAN BURGER
-          <span class="price">$6</span>
-        </p>
+        <p class="food-title">MEXICAN BURGER <span class="price">$6.5</span></p>
         <p class="food-desc">Beef patty, grilled onions, grilled bell pepper, guacamole sauce, chili sauce, fried jalapenos.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/home town burger.jpg" alt="" /></div>
+      <div class="image"><img src="img/home town burger.jpg" alt="Home Town Burger" /></div>
       <div class="text">
-        <p class="food-title">
-          HOME TOWN BURGER
-          <span class="price">$4.75</span>
-        </p>
-        <p class="food-desc">Beef patty, coleslaw, fries, ketchup, mustard.</p>
+        <p class="food-title">HOME TOWN BURGER <span class="price">$5.5</span></p>
+        <p class="food-desc">Beef patty, coleslaw salad, fries, ketchup, mustard, and tomato.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/beef american burger1.jpg" alt="" /></div>
+      <div class="image"><img src="img/chili burger.jpg" alt="Chili Burger" /></div>
       <div class="text">
-        <p class="food-title">
-          AMERICAN BURGER
-          <span class="price">$5.5</span>
+        <p class="food-title">CHILI BURGER <span class="price">$6</span></p>
+        <p class="food-desc">
+          Beef patty, Cheddar slice, iceberg, tomato, jalapeno, grilled onion, cocktail sauce, BBQ sauce.
         </p>
-        <p class="food-desc">Beef patty, melted cheddar, iceberg, tomato, pickles, grilled onions, cocktail sauce.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/bigbun-2.jpg" alt="" /></div>
+      <div class="image"><img src="img/beef american burger1.jpg" alt="American Burger" /></div>
       <div class="text">
-        <p class="food-title">
-          THE BIG BUN BURGER
-          <span class="price">$8</span>
+        <p class="food-title">AMERICAN BURGER <span class="price">$6</span></p>
+        <p class="food-desc">
+          Beef patty, Cheddar slice, iceberg, tomato, pickles, grilled onion, cocktail sauce, BBQ sauce.
         </p>
-        <p class="food-desc">Double beef patty, iceberg, minced red onions, mozzarella patty, the Big Bun sauce.</p>
       </div>
     </div>
 
-    <!-- Chicken Burgers -->
     <div class="container">
-      <div class="image"><img src="img/chicken burger-2.jpg" alt="" /></div>
+      <div class="image"><img src="img/beef mozzarella burger.jpg" alt="Beef Mozzarella Burger" /></div>
       <div class="text">
-        <p class="food-title">
-          CHICKEN BURGER
-          <span class="price">$4.75</span>
+        <p class="food-title">BEEF MOZZARELLA BURGER <span class="price">$7.5</span></p>
+        <p class="food-desc">Beef patty, mozzarella patty, iceberg, pickles, cocktail sauce, BBQ sauce.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image"><img src="img/bigbun-2.jpg" alt="The Big Bun Burger" /></div>
+      <div class="text">
+        <p class="food-title">THE BIG BUN BURGER <span class="price">$8.5</span></p>
+        <p class="food-desc">
+          Double beef patty, mozzarella cheese patty, iceberg, pickles, and the Big Bun sauce.
         </p>
+      </div>
+    </div>
+
+    <!-- CHICKEN -->
+    <div class="container">
+      <div class="image"><img src="img/chicken burger-2.jpg" alt="Chicken Burger" /></div>
+      <div class="text">
+        <p class="food-title">CHICKEN BURGER <span class="price">$5</span></p>
         <p class="food-desc">Grilled chicken breast, iceberg, pickles, garlic mayo.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/chicken bbq.jpg" alt="" /></div>
+      <div class="image"><img src="img/spicy chicken burger.jpg" alt="Spicy Chicken Burger" /></div>
       <div class="text">
-        <p class="food-title">
-          BBQ CHICKEN BURGER
-          <span class="price">$5</span>
-        </p>
-        <p class="food-desc">Grilled chicken breast, iceberg, pickles, mayo, BBQ sauce and chips.</p>
+        <p class="food-title">SPICY CHICKEN BURGER <span class="price">$6.5</span></p>
+        <p class="food-desc">Fried chicken breast, dipped in spicy BBQ, coleslaw, jalapeno, honey.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/chicken spicy burger.jpg" alt="" /></div>
+      <div class="image"><img src="img/chicken mozzarella burger.jpg" alt="Chicken Mozzarella Burger" /></div>
       <div class="text">
-        <p class="food-title">
-         ZINGER
-          <span class="price">$5.5</span>
-        </p>
-        <p class="food-desc">Fried chicken breast, garlic mayo, cocktail sauce, iceberg, pickles.</p>
+        <p class="food-title">CHICKEN MOZZARELLA BURGER <span class="price">$6.5</span></p>
+        <p class="food-desc">Grilled chicken breast, mozzarella patty, iceberg, pickles, garlic mayo.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/chicken crispy burger (2).jpg" alt="" /></div>
+      <div class="image"><img src="img/chicken bbq.jpg" alt="BBQ Chicken Burger" /></div>
       <div class="text">
-        <p class="food-title">
-          CRISPY CHICKEN BURGER
-          <span class="price">$6</span>
+        <p class="food-title">BBQ CHICKEN BURGER <span class="price">$5.5</span></p>
+        <p class="food-desc">Grilled chicken breast, iceberg, pickles, garlic mayo, BBQ sauce, and chips.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image"><img src="img/zinger burger.jpg" alt="Zinger Burger" /></div>
+      <div class="text">
+        <p class="food-title">ZINGER BURGER <span class="price">$5.5</span></p>
+        <p class="food-desc">Fried chicken breast, BBQ sauce, cocktail sauce, iceberg, and pickles.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image"><img src="img/zinger supreme burger.jpg" alt="Zinger Supreme Burger" /></div>
+      <div class="text">
+        <p class="food-title">ZINGER SUPREME BURGER <span class="price">$7.5</span></p>
+        <p class="food-desc">
+          Fried chicken breast, BBQ sauce, cocktail sauce, iceberg, mozzarella patty, and pickles.
         </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="image"><img src="img/chicken crispy burger (2).jpg" alt="Crispy Chicken Burger" /></div>
+      <div class="text">
+        <p class="food-title">CRISPY CHICKEN BURGER <span class="price">$6.5</span></p>
         <p class="food-desc">Fried chicken breast, cocktail sauce, pickles, iceberg, guacamole sauce.</p>
       </div>
     </div>
   </div>
 
   <!-- =============================
-       SANDWICHES (NEW GROUPING)
-       Contains non-burger sandwiches from earlier Beef/Chicken sections
-       + one EMPTY sandwich placeholder
+       SALADS (UPDATED TO MATCH MENU IMAGE)
        ============================= -->
-  <div id="sandwiches" class="section-container">
-    <h2>SANDWICHES</h2>
+  <div id="salads" class="section-container">
+    <h2>SALADS</h2>
 
     <div class="container">
-      <div class="image"><img src="img/steak sandwich-2.jpg" alt="" /></div>
+      <div class="image"><img src="img/caesar salad.jpg" alt="Caesar Salad" /></div>
       <div class="text">
-        <p class="food-title">
-          STEAK SANDWICH
-          <span class="price">$7</span>
-        </p>
-        <p class="food-desc">Marinated tenderloin steak, grilled onions, grilled tomatoes, avocado sauce, mozzarella cheese.</p>
+        <p class="food-title">CAESAR SALAD <span class="price">$5</span></p>
+        <p class="food-desc">Iceberg, croutons, Parmesan, served with our special caesar sauce.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/chicken sub (2).jpg" alt="" /></div>
+      <div class="image"><img src="img/crab salad.jpg" alt="Crab Salad" /></div>
       <div class="text">
-        <p class="food-title">
-         CHICKEN SUB
-          <span class="price">$6.5</span>
+        <p class="food-title">CRAB SALAD <span class="price">$6</span></p>
+        <p class="food-desc">
+          Crab sticks, iceberg, shredded carrots, shredded cucumber, corn, and avocado slices, served with cocktail sauce.
         </p>
-        <p class="food-desc">Grilled chicken breast, iceberg, pickles, corn, shredded mozzarella, garlic mayo or mayo.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="image"><img src="img/Fajita_-2.jpg" alt="" /></div>
+      <div class="image"><img src="img/farmer salad.jpg" alt="Farmar Salad" /></div>
       <div class="text">
-        <p class="food-title">
-         FAJITA SANDWICH
-          <span class="price">$6.5</span>
+        <p class="food-title">FARMAR SALAD <span class="price">$5</span></p>
+        <p class="food-desc">
+          Iceberg, corn, cherry tomato, cucumber, and feta cheese, served with lemon oil dressing.
         </p>
-        <p class="food-desc">Marinated grilled chicken, grilled bell pepper, grilled onions, mozzarella, soy sauce, avocado sauce.</p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="image"><img src="img/quesadilla chicken-2.jpg" alt="" /></div>
-      <div class="text">
-        <p class="food-title">
-          QUESADILLA CHICKEN
-          <span class="price">$6</span>
-        </p>
-        <p class="food-desc">Marinated chicken, grilled onions, grilled bell pepper, mozzarella, soy sauce served with guacamole dip.</p>
-      </div>
-    </div>
- <!-- Kept here since it was originally under Starters -->
- <div class="container">
-    <div class="image"><img src="img/potato sandwich.jpg" alt="" /></div>
-    <div class="text">
-      <p class="food-title">
-        POTATO SANDWICH
-        <span class="price">$2</span>
-      </p>
-      <p class="food-desc">Fried potatoes, coleslaw salad, ketchup, garlic mayo.</p>
-    </div>
-  </div>
-    <!-- EMPTY SANDWICH PLACEHOLDER (requested) -->
-    <div class="container placeholder">
-      <div class="image" ><img src="img/Logo.jpeg"
-      alt="" ></div>
-      <div class="text">
-        <p class="food-title">
-         BONELESS
-          <span class="price">$5.5</span>
-        </p>
-        <p class="food-desc">Fried chicken, BBQ sauce, honey mustard, cocktail sauce, iceberg, pickles.</p>
       </div>
     </div>
   </div>
 
   <!-- =============================
-       MEALS (NEW SECTION)
-       Collects all available meals + one EMPTY meal placeholder
-       ============================= -->
-  <div id="meals" class="section-container">
-    <h2>MEALS</h2>
-
-    <div class="container">
-      <div class="image"><img src="img/chicken crispy Meal.jpg" alt="" /></div>
-      <div class="text">
-        <p class="food-title">
-          CRISPY MEAL
-          <span class="price">$6.5</span>
-        </p>
-        <p class="food-desc">5 chicken strips, served with coleslaw salad, pickles, fries, garlic mayo.</p>
-      </div>
-    </div>
- <!-- 
-    <div class="container">
-      <div class="image"><img src="img/kids meal.jpg" alt="Kids Meal" /></div>
-      <div class="text">
-        <p class="food-title">
-          Kids Meal
-          <span class="price">$4.75</span>
-        </p>
-        <p class="food-desc">Cheese mini burger, fries, ketchup.</p>
-      </div>
-    </div>-->
-
-    <div class="container">
-      <div class="image"><img src="img/nuggets meal.jpg" alt="" /></div>
-      <div class="text">
-        <p class="food-title">
-          NUGGETS MEAL
-          <span class="price">$3.25</span>
-        </p>
-        <p class="food-desc">150g chicken nuggets, fries, cocktail sauce.</p>
-      </div>
-    </div>
-
-    <!-- EMPTY MEAL PLACEHOLDER (requested) -->
-    <div class="container placeholder">
-      <div class="image" ><img src="img/duo-meal.jpg" alt="" ></div>
-      <div class="text">
-        <p class="food-title">
-        DUO MEAL OFFER
-          <span class="price">$6</span>
-        </p>
-        <p class="food-desc">2 medium chicken cheese burgers, fries, ketchup</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- =============================
-       ADD-ONS (unchanged)
+       ADD-ONS (UPDATED TO MATCH MENU IMAGE)
        ============================= -->
   <div id="add-ons" class="section-container">
     <h2>ADD-ONS</h2>
 
     <div class="container">
       <div class="text">
-        <p class="food-title">
-          BEEF PATTY
-          <span class="price">$2.5</span>
-        </p>
+        <p class="food-title">BEEF PATTY <span class="price">$2.5</span></p>
       </div>
     </div>
 
     <div class="container">
       <div class="text">
-        <p class="food-title">
-          CHICKEN BREAST
-          <span class="price">$2.5</span>
-        </p>
+        <p class="food-title">CHICKEN BREAST <span class="price">$2.5</span></p>
       </div>
     </div>
 
     <div class="container">
       <div class="text">
-        <p class="food-title">
-          MOZZARELLA PATTY
-          <span class="price">$2</span>
-        </p>
+        <p class="food-title">MOZZARELLA PATTY <span class="price">$2</span></p>
       </div>
     </div>
 
     <div class="container">
       <div class="text">
-        <p class="food-title">
-          COLESLAW
-          <span class="price">$1</span>
-        </p>
+        <p class="food-title">EXTRA DIP <span class="price">$0.5</span></p>
       </div>
     </div>
 
     <div class="container">
       <div class="text">
-        <p class="food-title">
-          EXTRA DIP
-          <span class="price">$0.5</span>
-    </div>
-</div>
-    <div class="container">
-      <div class="text">
-        <p class="food-title">
-          UPGRADE TO COMBO
-          <span class="price">$2.5</span>
-        </p>
-        <p class="food-desc">Wedges, sauce, soft drink</p>
+        <p class="food-title">UPGRADE TO COMBO <span class="price">$2.5</span></p>
+        <p class="food-desc">Wedges or fries, sauce, soft drink.</p>
       </div>
     </div>
 
-
-  <div class="container">
-    <div class="text">
-      <p class="food-title">
-       SOFT DRINK 
-        <span class="price">$1</span>
-      </p>
+    <div class="container">
+      <div class="text">
+        <p class="food-title">SOFT DRINK <span class="price">$1</span></p>
+      </div>
     </div>
   </div>
-  <div class="container">
-    <div class="text">
-      <p class="food-title">
-       WATER 
-        <span class="price">$0.5</span>
-      </p>
-    </div>
-  </div>
+
   <!-- =============================
        FOOTER (unchanged)
        ============================= -->
@@ -543,7 +480,10 @@
         class="social-icon"
         ><i class="fab fa-instagram"></i
       ></a>
-      <a href="https://www.facebook.com/share/1Fzx9KxfnA/" target="_blank" class="social-icon"
+      <a
+        href="https://www.facebook.com/share/1Fzx9KxfnA/"
+        target="_blank"
+        class="social-icon"
         ><i class="fab fa-facebook-f"></i
       ></a>
       <a
@@ -561,47 +501,46 @@
        ============================= -->
   <script>
     // Mobile dropdown toggle: clicking the burger icon toggles the menu visibility
-    document.addEventListener('DOMContentLoaded', function () {
-      var navIcon = document.querySelector('.nav-icon');
+    document.addEventListener("DOMContentLoaded", function () {
+      var navIcon = document.querySelector(".nav-icon");
 
-      navIcon.addEventListener('click', function () {
-        navIcon.classList.toggle('active');
+      navIcon.addEventListener("click", function () {
+        navIcon.classList.toggle("active");
       });
 
       // Clicking anywhere outside the nav icon closes the menu
-      document.addEventListener('click', function (event) {
+      document.addEventListener("click", function (event) {
         if (!navIcon.contains(event.target)) {
-          navIcon.classList.remove('active');
+          navIcon.classList.remove("active");
         }
       });
     });
   </script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const header = document.querySelector('header');
-    const nav = document.querySelector('nav.main-nav');
-    const links = document.querySelectorAll('.main-nav a');
-  
-    links.forEach((link) => {
-      link.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent default anchor jump
-        const targetId = this.getAttribute('href'); // e.g., "#burgers"
-        const target = document.querySelector(targetId);
-  
-        if (target) {
-          // Total height of fixed elements
-          const totalOffset = header.offsetHeight + nav.offsetHeight;
-  
-          // Scroll position adjusted for fixed header + nav
-          const offsetPosition = target.offsetTop - totalOffset;
-  
-          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-        }
-      });
-    });
-  });
-  </script>
-  
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const header = document.querySelector("header");
+      const nav = document.querySelector("nav.main-nav");
+      const links = document.querySelectorAll(".main-nav a");
+
+      links.forEach((link) => {
+        link.addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent default anchor jump
+          const targetId = this.getAttribute("href"); // e.g., "#burgers"
+          const target = document.querySelector(targetId);
+
+          if (target) {
+            // Total height of fixed elements
+            const totalOffset = header.offsetHeight + nav.offsetHeight;
+
+            // Scroll position adjusted for fixed header + nav
+            const offsetPosition = target.offsetTop - totalOffset;
+
+            window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
